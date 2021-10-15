@@ -1,2 +1,2 @@
-# Java-Tiny-Practice-Projects
+# Java-Practice-Projects
  Javascript Practice Projects
