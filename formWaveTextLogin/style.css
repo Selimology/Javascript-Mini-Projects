@@ -66,10 +66,29 @@ body {
   display: block;
   border-bottom: 2px black solid;
   width: 100%;
-  padding: 1em 0;
+  padding: 0.5em 0;
   font-size: 0.8rem;
 }
 .form-control input:focus,
 .form-control input:valid {
   outline: 0;
+}
+
+.form-control label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.form-control label span {
+  display: inline-block;
+  font-size: 15px;
+  min-width: 0.2em;
+  transition: 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+  color: white;
+  transform: translateY(-30px);
 }
